@@ -1,0 +1,71 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.5in]{geometry} % Document margins
+\usepackage{enumitem}
+\name{Pavlo Triantafyllides} % Your name
+\address{(704) 804-0503 \\ triantafyllides@gmail.com \\ Austin, TX}
+
+\address{github.com/pavlo-tech \\ https://www.linkedin.com/in/pavlo-triantafyllides/} %Contact line
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} p{5.6in} }
+Languages & TypeScript, Scala, Python, Rust, Java 21, MySQL, Bash, Terraform, Custom DSLs \\
+Systems & Kafka, gRPC, Thrift, GraphQL, Node, Finagle, memcached, GCP Pub/Sub \\
+Platform & GCP, Kubernetes, Docker, CircleCI, New Relic, OTel, BigQuery \\
+AI / GenAI & MCP, LangChain, LangGraph, Prompt Engineering, Vector Embeddings \\
+Tools & npm, sbt, Claude Code, SourceGraph, Splunk, WireShark \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Intuit Credit Karma}{Jul 2020 - Present}{Software Engineer I - Software Engineer IV}{Charlotte, NC}
+
+\item Led cross functional effort across Data Science, Product, Facts Platform, User Management, and Decisioning to wire up new Fraud signals, preventing over \$10M in Account Takeover (ATO) Fraud loss.
+
+\item Designed and implemented Refund Advance underwriting service, integrating with Twilio Voice API to connect to Treasury Offset Program to establish eligibility at 99\% availability, saving \$40M per year.
+
+\item Integrated merchant-funded cashback payouts service with idempotent Money Movement Service, running 75K transactions/week, with FMEA-driven error classification and fault tolerance.
+
+\item Added MySQL Transaction with isolation level support to internal TypeScript framework APIs.
+
+\item Reduced framework complexity by adding default values to the capability DSL and Rust template engine.
+
+\item Migrated internal framework docsite into an LLM-agnostic MCP toolkit using python with Claude in the loop to generate tool names and summaries, facilitating internal agentic development.
+
+\item Built out net-worth MCP tools for integration with production LangChain Agent. Utilized redacted text data along with pii-based visuals to allow AI-powered insights while protecting member data.
+
+\item Won 1st Place \& Tech Leadership Award at Internal Hackathon for Semantic Classification of Fraud Phone Transcripts using LLAMA3 Vector Embeddings.
+
+\item Built a hybrid View Centric \& Data Centric GraphQL API and Service for Connected Accounts Platform Account linking, enabling native widget to improve connected account onboarding by 10\%.
+
+\item Built ATO validation Client library, which integrates with GIACT to determine if linked ACH credentials are associated with the user. Integrated full stack across Scala BE, React FE, and analytics ETL. 
+
+\item Developed and Maintained Fixed-Width Batch file ingestion and ETL pipeline for Credit Karma Money checking accound data.
+
+
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+\begin{rSubsection}{Clemson University}{May 2020}{B.S. Computer Engineering}{Clemson, SC}
+\item Magna Cum Laude (3.84 GPA) $\cdot$ Tau Beta Pi Engineering Honor Society $\cdot$ Published lossy-compression research (https://doi.org/10.1109/CLUSTER.2019.8891052)
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}
