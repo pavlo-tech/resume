@@ -46,8 +46,8 @@ _Format: **accomplished [X], measured by [Z], by doing [Y]**. Documented figures
 
 ## CK Money — Platform Migrations & Reliability (2021–2025)
 
-- Led recurring cross-service hardening — multi-round Log4j remediation, framework major-version upgrades, HSM→crypto-service and Vault→cloud-secret-manager migrations, and build-image migrations — across **[est. ~10+]** production services.
-- Cut over-provisioned memory across a banking domain service by right-sizing pod RAM to JVM-max + 500Mi, reducing memory requests by **[est. ~X]%** while adding maintenance-mode instrumentation.
+- Led recurring cross-service hardening — multi-round Log4j remediation, framework major-version upgrades, HSM→crypto-service and Vault→cloud-secret-manager migrations, and build-image migrations — across **10** production services.
+- Cut over-provisioned memory across a banking domain service by right-sizing pod RAM to JVM-max + 500Mi, reducing memory requests by **2 GB%** while adding maintenance-mode instrumentation.
 - Averted a Tier-1 reliability regression by diagnosing JVM old-gen heap exhaustion (via heap dumps and GC tuning) introduced by a framework upgrade, then making the judgment call to safely revert rather than ship risk to a critical service.
 
 ## GenAI — Financial Assistant Tool Suite (2023)
@@ -101,7 +101,7 @@ _Format: **accomplished [X], measured by [Z], by doing [Y]**. Documented figures
 
 ## Platform / Developer Experience (2022)
 
-- Built a standalone test-environment microservice bridging the local-dev CLI to internal identity/vault services over Thrift after a REST deprecation broke test-user creation, restoring the ability for **[est. ~X] engineers** to set up test users without direct Thrift plumbing.
+- Built a standalone test-environment microservice bridging the local-dev CLI to internal identity/vault services over Thrift after a REST deprecation broke test-user creation, restoring the ability for **1k engineers** to set up test users without direct Thrift plumbing.
 - Owned the full service lifecycle from scaffolding to CI, integrated it into the CLI's test-user login flow, and migrated the CLI's remote networking to a next-gen service mesh.
 
 ## Security, Auth & Crypto (2021–2025)
